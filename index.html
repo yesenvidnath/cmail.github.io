@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Email Generator</title>
+    <!-- Add Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/css/bootstrap.min.css">
+    <!-- Add Font Awesome CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1>Email Generator</h1>
+        <form id="emailForm">
+            <div class="mb-3">
+                <label for="doctorName" class="form-label">Doctor's Name</label>
+                <input type="text" class="form-control" id="doctorName" name="doctorName" required>
+            </div>
+            <div class="mb-3">
+                <label for="practiceName" class="form-label">Practice Name</label>
+                <input type="text" class="form-control" id="practiceName" name="practiceName" required>
+            </div>
+            <div class="mb-3">
+                <label for="location" class="form-label">Location</label>
+                <input type="text" class="form-control" id="location" name="location" required>
+            </div>
+            <div class="mb-3">
+                <label for="weaknesses" class="form-label">Weaknesses in Current Online Presence</label>
+                <textarea class="form-control" id="weaknesses" name="weaknesses" rows="3" required></textarea>
+            </div>
+            <div class="mb-3">
+                <label for="solutions" class="form-label">Suggested Solutions</label>
+                <textarea class="form-control" id="solutions" name="solutions" rows="3" required></textarea>
+            </div>
+            <div class="mb-3">
+                <label for="packagePrice" class="form-label">Package Price</label>
+                <input type="text" class="form-control" id="packagePrice" name="packagePrice" required>
+            </div>
+            <button type="submit" class="btn btn-primary"><i class="fas fa-envelope"></i> Generate Email</button>
+        </form>
+
+        <div id="emailResult" class="mt-4"></div>
+    </div>
+
+    <!-- Add Bootstrap and Font Awesome JS (Optional, if needed) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
